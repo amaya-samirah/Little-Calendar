@@ -6,13 +6,23 @@ body {
     margin: 0;
     width: 100vw;
     height: 100vh;
-    background: pink;
     user-select: none;
     -webkit-app-region: drag;
+    background-image: url("assets/outer-frame-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 20px;
 }
 
 .app {
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 13.375rem;
+    padding: 1rem 1.0625rem;
 }
 
 button,
@@ -21,4 +31,26 @@ textarea,
 select {
     -webkit-app-region: no-drag;
     cursor: pointer;
+}
+
+.title {
+    /* title box */
+    display: flex;
+    width: 157px;
+    padding: 0.25rem 0.625rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 6.25rem;
+    border: 1px solid #C079FF;
+    background: rgba(210, 164, 255, 0.40);
+
+    color: var(--white, #FFF);
+    
+    /* title */
+    font-family: "Pixelify Sans";
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
